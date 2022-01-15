@@ -1,0 +1,93 @@
+.title {
+  text-align: center;
+}
+
+.table {
+  border-collapse: collapse;
+  box-shadow: 0 5px 10px #e1e5ee;
+  background-color: white;
+  text-align: left;
+  overflow: hidden;
+}
+
+thead {
+  box-shadow: 0 5px 10px #e1e5ee;
+}
+
+th {
+  padding: 1em 2em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.9em;
+  font-weight: 900;
+}
+
+td {
+  padding: 1em 2em;
+}
+
+.action {
+  border-radius: 0.2em;
+  padding: 0.5em 1em;
+  text-align: center;
+  border: none;
+  margin: 0 0.5em;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+
+.action-new {
+  background-color: #c8e6c9;
+  color: #388e3c;
+  margin: 2em 0;
+  font-size: 1.1em;
+}
+
+.action-submit {
+  background-color: #c8e6c9;
+  color: #388e3c;
+  font-size: 1.1em;
+  padding: 0.7em;
+}
+
+.action-edit {
+  background-color: #fff0c2;
+  color: #a68b00;
+}
+
+.action-delete {
+  background-color: #ffcdd2;
+  color: #c62828;
+}
+
+tr:nth-child(even) {
+  background-color: #f4f6fb;
+}
+
+h2 {
+  text-align: center;
+}
+
+form {
+  min-width: 400px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  box-shadow: 0 5px 10px #e1e5ee;
+  padding: 2em;
+}
+
+label {
+  font-size: 1.1em;
+  padding-bottom: 0.9em;
+}
+
+.input-field {
+  font-size: 1.1em;
+  padding: 0.6em;
+  border-radius: 0.3em;
+  border: none;
+  outline: none;
+  box-shadow: 0 5px 10px #e1e5ee;
+}
