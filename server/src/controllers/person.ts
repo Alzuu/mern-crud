@@ -11,13 +11,26 @@ const getPeople = async (_req: Request, res: Response): Promise<void> => {
   }
 };
 
+const getPerson = async (req: Request, res: Response): Promise<void> => {
+  try {
+    const person: IPerson | null = await Person.findById(req.params.id);
+
+    res.status(200).json({
+      message: 'Person found',
+      person: person,
+    });
+  } catch (error) {
+    throw error;
+  }
+};
+
 const addPerson = async (req: Request, res: Response): Promise<void> => {
   try {
-    const body = req.body as Pick<IPerson, 'first_name' | 'last_name' | 'age'>;
+    const body = req.body as Pick<IPerson, 'firstName' | 'lastName' | 'age'>;
 
     const person: IPerson = new Person({
-      first_name: body.first_name,
-      last_name: body.last_name,
+      firstName: body.firstName,
+      lastName: body.lastName,
       age: body.age,
     });
 
@@ -72,4 +85,4 @@ const deletePerson = async (req: Request, res: Response): Promise<void> => {
   }
 };
 
-export { getPeople, addPerson, updatePerson, deletePerson };
+export { getPeople, getPerson, addPerson, updatePerson, deletePerson };

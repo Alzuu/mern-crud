@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.deletePerson = exports.updatePerson = exports.addPerson = exports.getPeople = void 0;
+exports.deletePerson = exports.updatePerson = exports.addPerson = exports.getPerson = exports.getPeople = void 0;
 const person_1 = __importDefault(require("../models/person"));
 const getPeople = async (_req, res) => {
     try {
@@ -15,12 +15,25 @@ const getPeople = async (_req, res) => {
     }
 };
 exports.getPeople = getPeople;
+const getPerson = async (req, res) => {
+    try {
+        const person = await person_1.default.findById(req.params.id);
+        res.status(200).json({
+            message: 'Person found',
+            person: person,
+        });
+    }
+    catch (error) {
+        throw error;
+    }
+};
+exports.getPerson = getPerson;
 const addPerson = async (req, res) => {
     try {
         const body = req.body;
         const person = new person_1.default({
-            first_name: body.first_name,
-            last_name: body.last_name,
+            firstName: body.firstName,
+            lastName: body.lastName,
             age: body.age,
         });
         const newPerson = await person.save();
