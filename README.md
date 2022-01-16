@@ -1,6 +1,6 @@
 # MERN-CRUD application
 
-This is a pre-assignment project for the Netum Summer Trainee 2022 program. It is a full-stack web app, built on React, TypeScript and Node.js. The app communicates with a [MongoDB Atlas database](https://www.mongodb.com/) to retrieve, edit and delete entries within a table.
+This is a pre-assignment project for the Netum Summer Trainee 2022 program. It is a full-stack web app, built on React, TypeScript, MongoDB, Express and Node.js . The app communicates with a [MongoDB Atlas database](https://www.mongodb.com/) to retrieve, edit and delete entries within a table.
 
 ## How to Install and Run the Project
 
