@@ -33,6 +33,7 @@ touch server/.env
 npm start
 ```
 
+5. Open application on [localhost:3000](http://localhost:3000/)
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
