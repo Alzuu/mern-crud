@@ -1,0 +1,28 @@
+{
+  "name": "mern-crud",
+  "version": "1.0.0",
+  "description": "A full-stack web app built on MERN and TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "server": "cd server && npm start",
+    "client": "cd client && npm start",
+    "server2": "cd server && npm run dev",
+    "client2": "cd client && npm run dev",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "dev": "concurrently \"npm run server2\" \"npm run client2\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alzuu/mern-crud.git"
+  },
+  "author": "Allan Li",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Alzuu/mern-crud/issues"
+  },
+  "homepage": "https://github.com/Alzuu/mern-crud#readme",
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "serve": "^13.0.2"
+  }
+}

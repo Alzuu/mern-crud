@@ -1,25 +1,16 @@
 # MERN-CRUD application - Client
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In the client directory, you can run:
 
-## Available Scripts
+#### `npm start`
 
-In the project directory, you can run:
+Starts client in production mode.\
+Make sure you have an npm package called [**serve**](https://www.npmjs.com/package/serve) installed in order to serve the client once it has finished building.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### `npm start`
+#### `npm run dev`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Runs the client in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The page will reload when you make changes.

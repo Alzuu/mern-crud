@@ -16,38 +16,22 @@ git clone https://github.com/Alzuu/mern-crud.git
 
 ```bash
 cd mern-crud
+npm install
 npm --prefix client install
 npm --prefix server install
 ```
 
-3. In the server directory, you can run:
+3. Add .env file with credentials in the server directory (DB_USER, DB_PASS, DB_NAME)
 
-#### `npm start`
+```bash
+touch server/.env
+```
 
-Starts server in production mode.\
-Server runs on [http://localhost:3001](http://localhost:3001).
+4. Once credentials have been added to .env file, go to the root directory of the project to build and run the application.
 
-#### `npm run dev`
-
-Runs the server in the development mode.\
-Server runs on [http://localhost:3001](http://localhost:3001).
-
-The server will restart when you make changes.
-
-4. In the client directory, you can run:
-
-#### `npm start`
-
-Starts client in production mode.\
-Make sure you have an npm package called [**serve**](https://www.npmjs.com/package/serve) installed in order to serve the client once it has finished building.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-#### `npm run dev`
-
-Runs the client in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.
+```bash
+npm start
+```
 
 ## License
 
