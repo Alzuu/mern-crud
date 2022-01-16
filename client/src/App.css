@@ -2,12 +2,16 @@
   text-align: center;
 }
 
+.table-container {
+  height: 600px;
+  overflow: auto;
+}
+
 .table {
   border-collapse: collapse;
   box-shadow: 0 5px 10px #e1e5ee;
   background-color: white;
   text-align: left;
-  overflow: hidden;
 }
 
 thead {
@@ -68,6 +72,10 @@ h2 {
   text-align: center;
 }
 
+.form-container {
+  height: 600px;
+}
+
 form {
   min-width: 400px;
   display: grid;
@@ -83,7 +91,7 @@ label {
   padding-bottom: 0.9em;
 }
 
-.input-field {
+input {
   font-size: 1.1em;
   padding: 0.6em;
   border-radius: 0.3em;

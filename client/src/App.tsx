@@ -38,25 +38,27 @@ const App: React.FC = () => {
         <button className="action action-new" onClick={() => navigate('/new')}>
           New
         </button>
-        <table className="table">
-          <thead>
-            <tr>
-              <th>First name</th>
-              <th>Last name</th>
-              <th>Age</th>
-              <th>Actions</th>
-            </tr>
-          </thead>
-          <tbody>
-            {people.map((person: IPerson) => (
-              <TableItem
-                key={person._id}
-                deletePerson={handleDeletePerson}
-                person={person}
-              />
-            ))}
-          </tbody>
-        </table>
+        <div className="table-container">
+          <table className="table">
+            <thead>
+              <tr>
+                <th>First name</th>
+                <th>Last name</th>
+                <th>Age</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              {people.map((person: IPerson) => (
+                <TableItem
+                  key={person._id}
+                  deletePerson={handleDeletePerson}
+                  person={person}
+                />
+              ))}
+            </tbody>
+          </table>
+        </div>
       </main>
     </div>
   );
